@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="card" wx:if="{{!userInfo}}">
+    <button class="btn-primary" bindtap="login">微信一键登录</button>
+  </view>
+  <view class="card" wx:else>
+    <view>昵称：{{userInfo.nickname}}</view>
+    <view>手机号：{{userInfo.mobile || '未绑定'}}</view>
+    <button bindtap="editProfile">编辑资料</button>
+  </view>
+</view>

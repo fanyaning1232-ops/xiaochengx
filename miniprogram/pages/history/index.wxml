@@ -1,0 +1,6 @@
+<view class="container">
+  <view wx:for="{{list}}" wx:key="id" class="card" bindtap="toDetail" data-id="{{item.id}}" data-url="{{item.resultUrl}}" data-type="{{item.type}}">
+    <view>{{item.typeName}}</view>
+    <view class="time">{{item.createdAt}}</view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="card">
+    <button class="btn-primary" bindtap="chooseImage">选择照片</button>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="widthFix" class="preview" />
+  </view>
+
+  <view class="card">
+    <view class="section-title">背景色</view>
+    <picker mode="selector" range="{{bgColors}}" bindchange="onBgChange">
+      <view class="picker">{{bgColor}}</view>
+    </picker>
+
+    <view class="section-title">证件尺寸</view>
+    <picker mode="selector" range="{{sizeNames}}" bindchange="onSizeChange">
+      <view class="picker">{{sizeName}}</view>
+    </picker>
+
+    <view class="section-title">美颜等级：{{beautyLevel}}</view>
+    <slider min="0" max="100" step="5" value="{{beautyLevel}}" bindchange="onBeautyChange" />
+
+    <view class="section-title">亮度优化：{{brightness}}</view>
+    <slider min="-50" max="50" step="5" value="{{brightness}}" bindchange="onBrightnessChange" />
+  </view>
+
+  <view class="card">
+    <button class="btn-primary" bindtap="processIdPhoto">生成证件照</button>
+    <button bindtap="createLayout">生成5寸/6寸打印排版</button>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="card">
+    <button class="btn-primary" bindtap="chooseImage">上传人脸图片</button>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="widthFix" class="preview" />
+    <picker mode="selector" range="{{templates}}" bindchange="onTemplateChange">
+      <view class="picker">模板：{{selectedTemplate}}</view>
+    </picker>
+    <button class="btn-primary" bindtap="generateEmoji">生成表情包</button>
+  </view>
+</view>

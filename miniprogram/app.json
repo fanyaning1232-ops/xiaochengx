@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/id-photo/index",
+    "pages/restoration/index",
+    "pages/watermark/index",
+    "pages/emoji/index",
+    "pages/history/index",
+    "pages/profile/index",
+    "pages/result/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "AI图片工具",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f7fb"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "feature-card": "/components/feature-card/index"
+  }
+}

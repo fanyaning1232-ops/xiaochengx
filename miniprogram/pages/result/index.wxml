@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="card">
+    <image src="{{url}}" mode="widthFix" class="preview" />
+    <picker mode="selector" range="{{resolutions}}" bindchange="onResChange">
+      <view class="picker">导出分辨率：{{resolution}}</view>
+    </picker>
+    <button class="btn-primary" bindtap="saveToAlbum">保存到相册</button>
+  </view>
+</view>
