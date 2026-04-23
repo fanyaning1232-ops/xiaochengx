@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="card">
+    <button class="btn-primary" bindtap="chooseImage">选择图片</button>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="widthFix" class="preview" />
+    <input placeholder="输入水印区域，如 x,y,w,h" value="{{regionText}}" bindinput="onRegionInput" />
+    <button class="btn-primary" bindtap="removeWatermark">智能去水印</button>
+  </view>
+</view>

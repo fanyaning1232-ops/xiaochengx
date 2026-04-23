@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="card hero">
+    <view class="title">AI 图片处理工具</view>
+    <view class="subtitle">证件照 / 修复 / 去水印 / 表情包</view>
+  </view>
+  <feature-card icon="🪪" name="AI证件照" desc="抠图、换底、尺寸裁剪、排版导出" path="/pages/id-photo/index" />
+  <feature-card icon="📷" name="老照片修复" desc="人脸增强 + 黑白上色" path="/pages/restoration/index" />
+  <feature-card icon="🧽" name="图片去水印" desc="框选区域，智能擦除修复" path="/pages/watermark/index" />
+  <feature-card icon="😂" name="表情包制作" desc="人脸 + 模板，一键生成" path="/pages/emoji/index" />
+  <feature-card icon="🕘" name="历史记录" desc="查看处理历史，重新下载" path="/pages/history/index" />
+  <feature-card icon="👤" name="个人中心" desc="微信登录与用户信息管理" path="/pages/profile/index" />
+</view>

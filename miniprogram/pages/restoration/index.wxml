@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="card">
+    <button class="btn-primary" bindtap="chooseImage">选择老照片</button>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="widthFix" class="preview" />
+    <checkbox-group bindchange="onOptionChange">
+      <label><checkbox value="faceEnhance" checked />人脸修复增强</label>
+      <label><checkbox value="colorize" checked />黑白智能上色</label>
+    </checkbox-group>
+    <button class="btn-primary" bindtap="process">开始修复</button>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+{
+  "desc": "AI 图片处理工具",
+  "rules": [{ "action": "allow", "page": "*" }]
+}
